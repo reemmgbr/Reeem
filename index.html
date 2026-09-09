@@ -93,172 +93,170 @@
       overflow-x: hidden;
     }
 
-/* ==================== PREMIUM PARTICLE CURSOR ==================== */
+    /* ==================== PREMIUM PARTICLE CURSOR ==================== */
 
-@media (min-width: 769px) {
-    html,
-    body,
-    a,
-    button,
-    input,
-    textarea,
-    select {
+    @media (min-width: 769px) {
+
+      html,
+      body,
+      a,
+      button,
+      input,
+      textarea,
+      select {
         cursor: none !important;
+      }
     }
-}
 
-.premium-cursor {
-    position: fixed;
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background: #fff;
-    box-shadow:
+    .premium-cursor {
+      position: fixed;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow:
         0 0 8px #22c3d6,
         0 0 18px rgba(34, 195, 214, 0.8);
-    pointer-events: none;
-    z-index: 999999;
-    transform: translate(-50%, -50%);
-    transition:
+      pointer-events: none;
+      z-index: 999999;
+      transform: translate(-50%, -50%);
+      transition:
         width 0.2s ease,
         height 0.2s ease,
         box-shadow 0.2s ease,
         opacity 0.2s ease;
-}
+    }
 
-.premium-cursor.hover {
-    width: 15px;
-    height: 15px;
-    box-shadow:
+    .premium-cursor.hover {
+      width: 15px;
+      height: 15px;
+      box-shadow:
         0 0 12px #22c3d6,
         0 0 30px rgba(34, 195, 214, 1),
         0 0 50px rgba(34, 195, 214, 0.5);
-}
+    }
 
-.premium-cursor-glow {
-    position: fixed;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 999998;
-    transform: translate(-50%, -50%);
-    background: radial-gradient(
-        circle,
-        rgba(34, 195, 214, 0.22) 0%,
-        rgba(34, 195, 214, 0.1) 35%,
-        transparent 70%
-    );
-    filter: blur(2px);
-    transition:
+    .premium-cursor-glow {
+      position: fixed;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 999998;
+      transform: translate(-50%, -50%);
+      background: radial-gradient(circle,
+          rgba(34, 195, 214, 0.22) 0%,
+          rgba(34, 195, 214, 0.1) 35%,
+          transparent 70%);
+      filter: blur(2px);
+      transition:
         width 0.25s ease,
         height 0.25s ease,
         opacity 0.25s ease;
-}
+    }
 
-.premium-cursor-glow.hover {
-    width: 85px;
-    height: 85px;
-    background: radial-gradient(
-        circle,
-        rgba(34, 195, 214, 0.28) 0%,
-        rgba(34, 195, 214, 0.12) 35%,
-        transparent 72%
-    );
-}
+    .premium-cursor-glow.hover {
+      width: 85px;
+      height: 85px;
+      background: radial-gradient(circle,
+          rgba(34, 195, 214, 0.28) 0%,
+          rgba(34, 195, 214, 0.12) 35%,
+          transparent 72%);
+    }
 
-.cursor-particle {
-    position: fixed;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background: #22c3d6;
-    pointer-events: none;
-    z-index: 999997;
-    box-shadow: 0 0 8px rgba(34, 195, 214, 0.9);
-    animation: particleFade 0.7s ease-out forwards;
-}
+    .cursor-particle {
+      position: fixed;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #22c3d6;
+      pointer-events: none;
+      z-index: 999997;
+      box-shadow: 0 0 8px rgba(34, 195, 214, 0.9);
+      animation: particleFade 0.7s ease-out forwards;
+    }
 
-@keyframes particleFade {
-    0% {
+    @keyframes particleFade {
+      0% {
         opacity: 0.9;
         transform: scale(1);
-    }
+      }
 
-    100% {
+      100% {
         opacity: 0;
         transform: scale(0);
+      }
     }
-}
 
-.cursor-burst {
-    position: fixed;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background: #22c3d6;
-    pointer-events: none;
-    z-index: 999996;
-    box-shadow: 0 0 10px rgba(34, 195, 214, 0.9);
-    animation: burst 0.7s ease-out forwards;
-}
+    .cursor-burst {
+      position: fixed;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #22c3d6;
+      pointer-events: none;
+      z-index: 999996;
+      box-shadow: 0 0 10px rgba(34, 195, 214, 0.9);
+      animation: burst 0.7s ease-out forwards;
+    }
 
-@keyframes burst {
-    0% {
+    @keyframes burst {
+      0% {
         opacity: 1;
         transform: translate(0, 0) scale(1);
-    }
+      }
 
-    100% {
+      100% {
         opacity: 0;
         transform:
-            translate(var(--tx), var(--ty))
-            scale(0);
+          translate(var(--tx), var(--ty)) scale(0);
+      }
     }
-}
 
-.cursor-ring {
-    position: fixed;
-    width: 10px;
-    height: 10px;
-    border: 1px solid #22c3d6;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 999995;
-    transform: translate(-50%, -50%);
-    animation: ringExpand 0.65s ease-out forwards;
-    box-shadow:
+    .cursor-ring {
+      position: fixed;
+      width: 10px;
+      height: 10px;
+      border: 1px solid #22c3d6;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 999995;
+      transform: translate(-50%, -50%);
+      animation: ringExpand 0.65s ease-out forwards;
+      box-shadow:
         0 0 10px rgba(34, 195, 214, 0.7),
         inset 0 0 8px rgba(34, 195, 214, 0.25);
-}
+    }
 
-@keyframes ringExpand {
-    0% {
+    @keyframes ringExpand {
+      0% {
         width: 10px;
         height: 10px;
         opacity: 0.9;
-    }
+      }
 
-    100% {
+      100% {
         width: 70px;
         height: 70px;
         opacity: 0;
+      }
     }
-}
 
-.cursor-hidden {
-    opacity: 0 !important;
-}
+    .cursor-hidden {
+      opacity: 0 !important;
+    }
 
-@media (pointer: coarse) {
-    .premium-cursor,
-    .premium-cursor-glow,
-    .cursor-particle,
-    .cursor-burst,
-    .cursor-ring {
+    @media (pointer: coarse) {
+
+      .premium-cursor,
+      .premium-cursor-glow,
+      .cursor-particle,
+      .cursor-burst,
+      .cursor-ring {
         display: none !important;
+      }
     }
-}
+
     body {
       font-family: var(--font-body);
       font-size: 16px;
@@ -3093,39 +3091,39 @@
       ScrollTrigger.refresh();
       window.addEventListener('load', function () { ScrollTrigger.refresh(); });
     })();
-/* ==================== PREMIUM PARTICLE CURSOR ==================== */
+    /* ==================== PREMIUM PARTICLE CURSOR ==================== */
 
-(function () {
-    var isTouch =
+    (function () {
+      var isTouch =
         'ontouchstart' in window ||
         navigator.maxTouchPoints > 0 ||
         window.matchMedia('(pointer: coarse)').matches;
 
-    if (isTouch) return;
+      if (isTouch) return;
 
-    var cursor = document.createElement('div');
-    cursor.className = 'premium-cursor';
+      var cursor = document.createElement('div');
+      cursor.className = 'premium-cursor';
 
-    var glow = document.createElement('div');
-    glow.className = 'premium-cursor-glow';
+      var glow = document.createElement('div');
+      glow.className = 'premium-cursor-glow';
 
-    document.body.appendChild(glow);
-    document.body.appendChild(cursor);
+      document.body.appendChild(glow);
+      document.body.appendChild(cursor);
 
-    var mouseX = window.innerWidth / 2;
-    var mouseY = window.innerHeight / 2;
+      var mouseX = window.innerWidth / 2;
+      var mouseY = window.innerHeight / 2;
 
-    var cursorX = mouseX;
-    var cursorY = mouseY;
+      var cursorX = mouseX;
+      var cursorY = mouseY;
 
-    var glowX = mouseX;
-    var glowY = mouseY;
+      var glowX = mouseX;
+      var glowY = mouseY;
 
-    var lastParticleX = mouseX;
-    var lastParticleY = mouseY;
+      var lastParticleX = mouseX;
+      var lastParticleY = mouseY;
 
-    /* Mouse movement */
-    window.addEventListener('mousemove', function (e) {
+      /* Mouse movement */
+      window.addEventListener('mousemove', function (e) {
         mouseX = e.clientX;
         mouseY = e.clientY;
 
@@ -3133,20 +3131,20 @@
         glow.classList.remove('cursor-hidden');
 
         var distance = Math.hypot(
-            mouseX - lastParticleX,
-            mouseY - lastParticleY
+          mouseX - lastParticleX,
+          mouseY - lastParticleY
         );
 
         if (distance > 10) {
-            createParticle(mouseX, mouseY);
+          createParticle(mouseX, mouseY);
 
-            lastParticleX = mouseX;
-            lastParticleY = mouseY;
+          lastParticleX = mouseX;
+          lastParticleY = mouseY;
         }
-    });
+      });
 
-    /* Smooth animation */
-    function animateCursor() {
+      /* Smooth animation */
+      function animateCursor() {
         cursorX += (mouseX - cursorX) * 0.35;
         cursorY += (mouseY - cursorY) * 0.35;
 
@@ -3160,12 +3158,12 @@
         glow.style.top = glowY + 'px';
 
         requestAnimationFrame(animateCursor);
-    }
+      }
 
-    animateCursor();
+      animateCursor();
 
-    /* Create trailing particle */
-    function createParticle(x, y) {
+      /* Create trailing particle */
+      function createParticle(x, y) {
         var particle = document.createElement('div');
 
         particle.className = 'cursor-particle';
@@ -3181,57 +3179,57 @@
         document.body.appendChild(particle);
 
         setTimeout(function () {
-            particle.remove();
+          particle.remove();
         }, 700);
-    }
+      }
 
-    /* Hover effect */
-    var interactiveElements = document.querySelectorAll(
+      /* Hover effect */
+      var interactiveElements = document.querySelectorAll(
         'a, button, input, textarea, select, [role="button"], .magnetic, .view-trigger'
-    );
+      );
 
-    interactiveElements.forEach(function (el) {
+      interactiveElements.forEach(function (el) {
         el.addEventListener('mouseenter', function () {
-            cursor.classList.add('hover');
-            glow.classList.add('hover');
+          cursor.classList.add('hover');
+          glow.classList.add('hover');
         });
 
         el.addEventListener('mouseleave', function () {
-            cursor.classList.remove('hover');
-            glow.classList.remove('hover');
+          cursor.classList.remove('hover');
+          glow.classList.remove('hover');
         });
-    });
+      });
 
-    /* Click burst */
-    window.addEventListener('click', function (e) {
+      /* Click burst */
+      window.addEventListener('click', function (e) {
         createBurst(e.clientX, e.clientY);
-    });
+      });
 
-    function createBurst(x, y) {
+      function createBurst(x, y) {
         var particleCount = 14;
 
         for (var i = 0; i < particleCount; i++) {
-            var particle = document.createElement('div');
+          var particle = document.createElement('div');
 
-            particle.className = 'cursor-burst';
+          particle.className = 'cursor-burst';
 
-            particle.style.left = x + 'px';
-            particle.style.top = y + 'px';
+          particle.style.left = x + 'px';
+          particle.style.top = y + 'px';
 
-            var angle = (Math.PI * 2 * i) / particleCount;
-            var distance = 25 + Math.random() * 35;
+          var angle = (Math.PI * 2 * i) / particleCount;
+          var distance = 25 + Math.random() * 35;
 
-            var tx = Math.cos(angle) * distance;
-            var ty = Math.sin(angle) * distance;
+          var tx = Math.cos(angle) * distance;
+          var ty = Math.sin(angle) * distance;
 
-            particle.style.setProperty('--tx', tx + 'px');
-            particle.style.setProperty('--ty', ty + 'px');
+          particle.style.setProperty('--tx', tx + 'px');
+          particle.style.setProperty('--ty', ty + 'px');
 
-            document.body.appendChild(particle);
+          document.body.appendChild(particle);
 
-            setTimeout(function () {
-                particle.remove();
-            }, 700);
+          setTimeout(function () {
+            particle.remove();
+          }, 700);
         }
 
         /* Expanding ring */
@@ -3245,21 +3243,21 @@
         document.body.appendChild(ring);
 
         setTimeout(function () {
-            ring.remove();
+          ring.remove();
         }, 650);
-    }
+      }
 
-    /* Hide when mouse leaves the window */
-    document.addEventListener('mouseleave', function () {
+      /* Hide when mouse leaves the window */
+      document.addEventListener('mouseleave', function () {
         cursor.classList.add('cursor-hidden');
         glow.classList.add('cursor-hidden');
-    });
+      });
 
-    document.addEventListener('mouseenter', function () {
+      document.addEventListener('mouseenter', function () {
         cursor.classList.remove('cursor-hidden');
         glow.classList.remove('cursor-hidden');
-    });
-})();
+      });
+    })();
   </script>
 </body>
 
